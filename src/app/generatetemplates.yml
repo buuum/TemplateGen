@@ -1,0 +1,45 @@
+groups:
+  group1:
+    title: Grupo 1
+    templates:
+      template1:
+        srcs:
+          - test/demo/template.php
+        dest:
+          - test/--file--.php
+        questions:
+          question1:
+            title: ¿En que carpeta pondremos esto?
+            replaces:
+              - --folder--
+              - --upper-folder--:
+                - uppercase: true
+              - --folder-pre-su--:
+                - prefix: \
+                - suffix: \
+          question2:
+            title: ¿Nombre del archivo de esto?
+            replaces:
+              - --file--
+  group2:
+    title: Grupo 2
+    templates:
+      template1:
+        srcs:
+          - test/demo/template.php
+        dest:
+          - test/--file--.php
+        questions:
+          question1:
+            title: ¿En que carpeta pondremos esto?
+            replaces:
+              - --folder--
+              - --upper-folder--:
+                - uppercase: true
+              - --folder-pre-su--:
+                - prefix: \
+                - suffix: \
+          question2:
+            title: ¿Nombre del archivo de esto?
+            replaces:
+              - --file--
